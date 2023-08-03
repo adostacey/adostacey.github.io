@@ -10,20 +10,27 @@
     <nav id="primary-nav">
       <ul>
         <li>
-          <a href=""><h1>Aaron Stacey</h1></a>
+          <h1>
+            <a href=""><i class="fa-solid fa-soap"></i> Aaron Stacey</a>
+          </h1>
         </li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="http://">About</a></li>
         <li><a href="#contact">Contact</a></li>
+        <!--! .sr-only and aria-hidden rules are supplied by fontawesome  -->
         <li>
           <a href="http://"
-            ><span class="fa-brands fa-linkedin"></span>Linkedin</a
+            ><span class="fa-brands fa-linkedin" aria-hidden="true"></span
+            ><span class="sr-only">Linkedin</span></a
           >
         </li>
         <li>
-          <a href="http://"><span class="fa-brands fa-github"></span>Github</a>
+          <a href="http://"
+            ><span class="fa-brands fa-github" aria-hidden="false"></span
+            ><span class="sr-only">Github</span></a
+          >
         </li>
-        <li><a href="http://">Resume</a></li>
+        <li><a class="button" href="http://">Resume</a></li>
       </ul>
     </nav>
     <section id="intro">
@@ -35,13 +42,43 @@
         learning path.
       </p>
     </section>
+    <div class="gradient"></div>
     <section id="contact">
       <h2>Contact Me</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nemo
         cupiditate voluptate inventore corporis hic.
       </p>
-      <a href="mailto:#">Email me</a>
+      <a class="button" href="mailto:#">Email me</a>
     </section>
+    <div class="gradient"></div>
+    <footer>
+      <h2>Aaron Stacey &middot; Poser Developer</h2>
+      <!-- ! restrict nav tags to major nav elements -->
+      <nav>
+        <ul>
+          <li>
+            <a href=""
+              ><span class="fa-brands fa-linkedin" aria-hidden="false"></span
+              ><span class="sr-only">LinkedIn</span></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><span class="fa-brands fa-github" aria-hidden="false"></span
+              ><span class="sr-only">Github</span></a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><span class="fa-solid fa-envelope" aria-hidden="false"></span
+              ><span class="sr-only">Email</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <p><small> &copy; 2021 Aaron Stacey. All rights reserved.</small></p>
+    </footer>
   </body>
 </html>
